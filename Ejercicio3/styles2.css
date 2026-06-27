@@ -1,0 +1,30 @@
+:root {
+    --color-principal: #1e40af;
+    --color-secundario: #f97316;
+    --color-texto: #ffffff;
+}
+
+.box {
+    background-color: blue; /* Regla base */
+    color: var(--color-texto);
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Conflicto de cascada */
+.featured { background-color: orange; } 
+.box.featured { background-color: purple; } 
+/* Gana '.box.featured' por tener mayor especificidad (dos selectores de clase) */
+
+.variable {
+    background-color: var(--color-principal);
+}
+
+.transparent-opacity {
+    background-color: var(--color-secundario);
+    opacity: 0.5; /* Afecta al fondo Y al contenido (texto se vuelve transparente) */
+}
+
+.transparent-alpha {
+    background-color: rgba(249, 115, 22, 0.5); /* Afecta SOLO al fondo */
+}
