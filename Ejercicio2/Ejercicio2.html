@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Académica</title>
+</head>
+<body>
+
+    <h1>Programación Académica</h1>
+    <p>Consulta el horario semanal de los módulos de formación.</p>
+
+    <!-- Tabla de Horarios -->
+    <table border="1">
+        <tr>
+            <th>Día</th>
+            <th>Hora</th>
+            <th>Responsable</th>
+            <th>Temas</th>
+        </tr>
+        <tr>
+            <td>Lunes</td>
+            <td>08:00</td>
+            <td>Docente A</td>
+            <td>
+                <ul>
+                    <li>HTML Estructura</li>
+                    <li>Etiquetas básicas</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Martes</td>
+            <td>08:00</td>
+            <td>Docente B</td>
+            <td>
+                <ul>
+                    <li>CSS Cascada</li>
+                    <li>Variables CSS</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Miércoles</td>
+            <td>10:00</td>
+            <td>Docente A</td>
+            <td>
+                <ul>
+                    <li>Formularios</li>
+                    <li>Inputs y Labels</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Jueves</td>
+            <td>08:00</td>
+            <td>Docente C</td>
+            <td>
+                <ul>
+                    <li>Git Init</li>
+                    <li>Repositorios</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td>09:00</td>
+            <td>Docente B</td>
+            <td>
+                <ul>
+                    <li>Revision Proyectos</li>
+                    <li>Feedbacks</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <blockquote>
+        "La educación es el pasaporte hacia el futuro, el mañana pertenece a quienes se preparan para él hoy." - Malcolm X
+    </blockquote>
+
+    <hr>
+
+    <!-- Formulario de Inscripción -->
+    <h1>Formulario de Inscripción</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="tel">Teléfono:</label><br>
+        <input type="tel" id="tel" name="telefono"><br><br>
+
+        <label for="fecha">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <label>Modalidad de preferencia:</label><br>
+        <input type="radio" id="presencial" name="modalidad" value="presencial">
+        <label for="presencial">Presencial</label>
+        <input type="radio" id="virtual" name="modalidad" value="virtual">
+        <label for="virtual">Virtual</label><br><br>
+
+        <input type="checkbox" id="acepto" name="acepto" value="si">
+        <label for="acepto">Acepto los términos y condiciones</label><br><br>
+
+        <input type="submit" value="Enviar Registro">
+    </form>
+
+</body>
+</html>

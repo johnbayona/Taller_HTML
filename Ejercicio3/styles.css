@@ -1,25 +1,40 @@
-/* Estilos base (Herencia) */
+/* Estilos generales para el body (Herencia) */
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff; /* Color de texto base que se hereda */
+    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Estilos de la tarjeta */
+/* Clase de la tarjeta */
 .card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white; /* Heredado por los hijos */
+    /* Gradiente e imagen de fondo */
+    background-image: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(249, 115, 22, 0.9)), 
+                      url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Espaciado y bordes */
     padding: 2rem;
-    border-radius: 15px;
-    width: 300px;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
+/* Estilo del botón */
 .card__button {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 10px 20px;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1e40af;
+    padding: 10px 25px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 15px;
 }
