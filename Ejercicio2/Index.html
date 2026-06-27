@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción Académica</title>
+</head>
+<body>
+
+    <h1>Horario de Clases</h1>
+    <p>Consulta los temas programados para esta semana.</p>
+
+    <!-- Tabla con listas internas -->
+    <table border="1">
+        <tr>
+            <th>Día</th>
+            <th>Hora</th>
+            <th>Responsable</th>
+            <th>Temas</th>
+        </tr>
+        <tr>
+            <td>Lunes</td>
+            <td>08:00</td>
+            <td>Docente A</td>
+            <td>
+                <ul>
+                    <li>HTML Estructura</li>
+                    <li>Etiquetas básicas</li>
+                </ul>
+            </td>
+        </tr>
+        <!-- Agrega aquí las otras 4 filas -->
+    </table>
+
+    <hr>
+
+    <blockquote>"La organización de la información es la base de una buena interfaz."</blockquote>
+
+    <hr>
+
+    <!-- Formulario de inscripción -->
+    <h1>Formulario de Inscripción</h1>
+    <form action="#" method="post">
+        <label>Nombre: <input type="text" name="nombre" required></label><br>
+        <label>Email: <input type="email" name="email"></label><br>
+        <label>Fecha: <input type="date" name="fecha"></label><br>
+        <label>Teléfono: <input type="tel" name="telefono"></label><br>
+        
+        <p>Modalidad:</p>
+        <input type="radio" id="presencial" name="modalidad" value="presencial">
+        <label for="presencial">Presencial</label>
+        <input type="radio" id="virtual" name="modalidad" value="virtual">
+        <label for="virtual">Virtual</label><br>
+
+        <input type="checkbox" id="acepto" name="acepto" value="si">
+        <label for="acepto">Acepto términos</label><br>
+
+        <input type="submit" value="Enviar Registro">
+    </form>
+
+</body>
+</html>

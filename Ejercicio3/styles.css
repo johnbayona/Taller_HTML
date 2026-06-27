@@ -1,0 +1,25 @@
+/* Estilos base (Herencia) */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Estilos de la tarjeta */
+.card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white; /* Heredado por los hijos */
+    padding: 2rem;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.card__button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
