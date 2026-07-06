@@ -1,0 +1,127 @@
+/* =====================================
+   ESTILOS GENERALES
+===================================== */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    margin:40px;
+    color:#333;
+}
+
+/* =====================================
+   Encabezado principal
+   Se centra el contenido para mejorar
+   la presentación del panel.
+===================================== */
+
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:36px;
+    font-weight:bold;
+    color:#0d6efd;
+}
+
+.header p{
+    font-size:18px;
+}
+
+/* =====================================
+   Tarjeta introductoria
+   Se utilizan padding, borde y
+   bordes redondeados para destacar
+   la información principal.
+===================================== */
+
+.card{
+    background:white;
+    border:2px solid #0d6efd;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:40px;
+}
+
+.card h2{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.card p{
+    font-size:17px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+.card strong{
+    color:#198754;
+}
+
+/* =====================================
+   Tabla académica
+   Se colapsan los bordes para una
+   apariencia más limpia.
+===================================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:40px;
+}
+
+th{
+    background:#0d6efd;
+    color:white;
+    padding:15px;
+}
+
+td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:center;
+}
+
+tbody tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+tbody tr:hover{
+    background:#dbeafe;
+}
+
+/* =====================================
+   Lista de recomendaciones
+===================================== */
+
+.resources{
+    background:#ffffff;
+    border-left:6px solid #198754;
+    padding:20px;
+    margin-bottom:40px;
+}
+
+.resources ul{
+    line-height:2;
+    font-size:17px;
+}
+
+/* =====================================
+   Modelo de cajas
+   Se controla el contenido largo
+   mediante overflow:auto.
+===================================== */
+
+.box{
+    width:500px;
+    height:140px;
+    background:#ffffff;
+    border:2px solid #6c757d;
+    border-radius:10px;
+    padding:20px;
+    margin-top:20px;
+    overflow:auto;
+    line-height:1.7;
+}

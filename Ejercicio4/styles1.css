@@ -1,0 +1,172 @@
+/* ==========================
+   Selector por etiqueta
+   Selecciona todos los párrafos
+========================== */
+
+p{
+    color:#555;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ==========================
+   Selector por ID
+   Selecciona el encabezado principal
+========================== */
+
+#encabezado-principal{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ==========================
+   Selector por clase
+   Aplica estilo a todas las tarjetas
+========================== */
+
+.card{
+    border:1px solid #ccc;
+    padding:15px;
+    margin:15px;
+    border-radius:8px;
+    background:#f7f7f7;
+}
+
+/* ==========================
+   Selector mixto
+   Solo las tarjetas dentro
+   de la sección card-list
+========================== */
+
+section.card-list{
+    display:flex;
+    gap:15px;
+}
+
+/* ==========================
+   Selector mixto
+   Solo botones con clase primary
+========================== */
+
+button.primary{
+    background:#198754;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* ==========================
+   Botón secundario
+========================== */
+
+.secondary{
+    background:#6c757d;
+    color:white;
+    border:none;
+    padding:10px 20px;
+}
+
+/* ==========================
+   Hover sobre botones
+========================== */
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   Selector de atributo
+   Campos deshabilitados
+========================== */
+
+[disabled]{
+    background:#ddd;
+}
+
+/* ==========================
+   Todos los enlaces
+========================== */
+
+[href]{
+    color:blue;
+}
+
+/* ==========================
+   Enlaces HTTPS
+========================== */
+
+[href^="https"]{
+    font-weight:bold;
+}
+
+/* ==========================
+   Archivos PDF
+========================== */
+
+[href$=".pdf"]{
+    color:red;
+}
+
+/* ==========================
+   Campo email
+========================== */
+
+[type="email"]{
+    border:2px solid green;
+}
+
+/* ==========================
+   Primer elemento de la lista
+========================== */
+
+.lista li:first-child{
+    color:red;
+    font-weight:bold;
+}
+
+/* ==========================
+   Último elemento de la lista
+========================== */
+
+.lista li:last-child{
+    color:blue;
+    font-weight:bold;
+}
+
+/* ==========================
+   Tercer elemento
+========================== */
+
+.lista li:nth-child(3){
+    background:yellow;
+}
+
+/* ==========================
+   Elementos pares
+========================== */
+
+.lista li:nth-of-type(even){
+    background:#e8f4ff;
+}
+
+/* ==========================
+   Elemento vacío
+========================== */
+
+.vacio:empty{
+    width:120px;
+    height:40px;
+    background:orange;
+    margin-top:15px;
+}
+
+/* ==========================
+   Hover sobre enlaces
+========================== */
+
+a:hover{
+    color:green;
+}

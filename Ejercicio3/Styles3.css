@@ -1,0 +1,159 @@
+/*=========================
+Variables globales
+=========================*/
+
+:root{
+
+    --color-principal:#1565c0;
+    --color-secundario:#0d47a1;
+    --color-claro:#ffffff;
+    --color-fondo:#f4f6f8;
+
+}
+
+/*=========================
+Estilos generales
+=========================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--color-fondo);
+
+}
+
+/*=========================
+Hero
+=========================*/
+
+.hero{
+
+    height:100vh;
+
+    /* Se utiliza un gradiente sobre una imagen de fondo */
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("https://picsum.photos/1600/900");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* Fondo con canal alfa */
+
+.overlay{
+
+    background:rgba(255,255,255,.85);
+
+    padding:40px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    width:70%;
+
+}
+
+.overlay h1{
+
+    color:var(--color-secundario);
+
+    margin-bottom:20px;
+
+}
+
+.overlay p{
+
+    margin-bottom:30px;
+
+}
+
+/* Primera regla */
+
+.btn{
+
+    background:gray;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+
+}
+
+/* La cascada hace que esta regla sobrescriba
+el color de fondo definido anteriormente */
+
+.btn{
+
+    background:var(--color-principal);
+
+}
+
+.beneficios{
+
+    padding:60px;
+    text-align:center;
+
+}
+
+.tarjetas{
+
+    margin-top:30px;
+
+}
+
+.card{
+
+    display:inline-block;
+
+    width:280px;
+
+    margin:15px;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:10px;
+
+    /* Ejemplo de opacidad */
+
+    opacity:.95;
+
+}
+
+.cta{
+
+    background:var(--color-secundario);
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px;
+
+}
+
+.cta .btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+}

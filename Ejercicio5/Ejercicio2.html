@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio del Modelo de Cajas</title>
+    <link rel="stylesheet" href="box.css">
+</head>
+
+<body>
+
+    <h1>Laboratorio del Modelo de Cajas en CSS</h1>
+
+    <!-- Caja 1 -->
+    <div class="box contenido">
+        <h2>Content</h2>
+        <p>
+            Esta caja muestra únicamente el contenido con un ancho fijo.
+            Sirve para observar el espacio que ocupa el contenido antes de
+            aplicar otras propiedades del modelo de cajas.
+        </p>
+    </div>
+
+    <!-- Caja 2 -->
+    <div class="box padding">
+        <h2>Padding</h2>
+        <p>
+            El padding agrega espacio interno entre el contenido y el borde,
+            mejorando la presentación y la legibilidad del elemento.
+        </p>
+    </div>
+
+    <!-- Caja 3 -->
+    <div class="box borde">
+        <h2>Border</h2>
+        <p>
+            El borde delimita visualmente la caja y permite diferenciar
+            claramente cada componente dentro de la página.
+        </p>
+    </div>
+
+    <!-- Caja 4 -->
+    <div class="box margen">
+        <h2>Margin</h2>
+        <p>
+            El margin crea separación externa entre esta caja y los demás
+            elementos del documento HTML.
+        </p>
+    </div>
+
+    <!-- Caja 5 -->
+    <div class="box redondeada">
+        <h2>Border Radius</h2>
+        <p>
+            La propiedad border-radius redondea las esquinas del borde,
+            proporcionando un diseño más moderno y agradable.
+        </p>
+    </div>
+
+    <!-- Overflow Visible -->
+    <div class="box overflow-visible">
+        <h2>Overflow: Visible</h2>
+        <p>
+            Este texto es demasiado largo para el tamaño del contenedor. El contenido continúa mostrándose fuera de la caja porque el valor visible permite que el contenido desborde el área establecida sin ocultarlo.
+        </p>
+    </div>
+
+    <!-- Overflow Hidden -->
+    <div class="box overflow-hidden">
+        <h2>Overflow: Hidden</h2>
+        <p>
+            Este contenido supera la altura del contenedor, pero la parte sobrante queda oculta al utilizar la propiedad overflow con el valor hidden.
+        </p>
+    </div>
+
+    <!-- Overflow Scroll -->
+    <div class="box overflow-scroll">
+        <h2>Overflow: Scroll</h2>
+        <p>
+            Cuando el contenido es mayor que el tamaño del contenedor aparecen barras de desplazamiento, permitiendo visualizar toda la información mediante el scroll.
+        </p>
+    </div>
+
+    <!-- Overflow Auto -->
+    <div class="box overflow-auto">
+        <h2>Overflow: Auto</h2>
+        <p>
+            El navegador mostrará barras de desplazamiento únicamente cuando sean necesarias, manteniendo un diseño más limpio.
+        </p>
+    </div>
+
+</body>
+
+</html>

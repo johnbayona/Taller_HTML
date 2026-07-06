@@ -1,0 +1,121 @@
+/* =====================================
+   ESTILOS GENERALES
+===================================== */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    margin:40px;
+}
+
+h1{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:30px;
+}
+
+/* =====================================
+   ESTILO BASE DE TODAS LAS CAJAS
+===================================== */
+
+.box{
+    width:350px;
+    background:white;
+    padding:10px;
+    margin-bottom:20px;
+    border:1px solid #999;
+    font-size:16px;
+}
+
+/* =====================================
+   CONTENT
+   Solo muestra el contenido básico.
+===================================== */
+
+.contenido{
+    background:#e3f2fd;
+}
+
+/* =====================================
+   PADDING
+   Aumenta el espacio interno.
+===================================== */
+
+.padding{
+    padding:35px;
+    background:#fff3cd;
+}
+
+/* =====================================
+   BORDER
+   Cambia el grosor y color del borde.
+===================================== */
+
+.borde{
+    border:6px solid #198754;
+}
+
+/* =====================================
+   MARGIN
+   Incrementa el espacio externo.
+===================================== */
+
+.margen{
+    margin-left:60px;
+    margin-top:40px;
+    background:#f8d7da;
+}
+
+/* =====================================
+   BORDER-RADIUS
+   Redondea las esquinas.
+===================================== */
+
+.redondeada{
+    border-radius:25px;
+    background:#d1e7dd;
+}
+
+/* =====================================
+   OVERFLOW: VISIBLE
+   El contenido sobresale del contenedor.
+===================================== */
+
+.overflow-visible{
+    height:70px;
+    overflow:visible;
+    background:#e2e3e5;
+}
+
+/* =====================================
+   OVERFLOW: HIDDEN
+   Oculta el contenido sobrante.
+===================================== */
+
+.overflow-hidden{
+    height:70px;
+    overflow:hidden;
+    background:#fde2e2;
+}
+
+/* =====================================
+   OVERFLOW: SCROLL
+   Siempre aparecen barras de desplazamiento.
+===================================== */
+
+.overflow-scroll{
+    height:70px;
+    overflow:scroll;
+    background:#dbeafe;
+}
+
+/* =====================================
+   OVERFLOW: AUTO
+   Solo aparecen barras cuando son necesarias.
+===================================== */
+
+.overflow-auto{
+    height:70px;
+    overflow:auto;
+    background:#fff3cd;
+}
